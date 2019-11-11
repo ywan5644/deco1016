@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="register.css">
+  <head>
+</head>
+<body>
+	<div class="page"></div>
+	<div class="message1">
+		<h1>To ensure we can deliver to your place please <em>double check</em> the address you input</h1>
+	</div>
+	<div class="message2">
+		<h3>We are only avaliable in the gien countries</h3>
+	</br>
+	<h3>We will protect your personal information at all cost</h3>
+	</div>
+	<button class="btnB" onCLick="window.location='homepage.html'">Home</button>
+	
+  <div id="wrapper">
+	  <h1 id="title">Account Details</h1>
+   <form method="POST" action="index.php" onsubmit="return Validate()" name="vform" >
+	<div id="username_div">
+		 <label>Username</label></br>
+		 <div class="input">
+		 <input type="text" name="username" class="textInput" placeholder="Enter Your Username Here">
+		</div>
+   	  <div id="name_error"></div>
+	   </div>
+	   
+   	<div id="email_div">
+   	  <label>Email</label></br>
+   	  <input type="email" name="email" class="textInput">
+   	  <div id="email_error"></div>
+	   </div>
+	   
+   	<div id="password_div">
+   	  <label>Password</label></br>
+   	  <input type="password" name="password" class="textInput">
+	   </div>
+	   
+   	<div id="pass_confirm_div">
+   	   <label>Password confirm</label></br>
+   	   <input type="password" name="password_confirm" class="textInput">
+   	   <div id="password_error"></div>
+	   </div>
+	<div id="First_name_div">
+		<label>First Name</label></br>
+		<input type="First_name" name="First_name" class="textInputSmallLeft">
+		<div id="firstName_error"></div>
+
+	</div>
+	<div id="Last_name_div">
+			<label class="labelRight">Last Name</label></br>
+			<input type="Last_name" name="Last_name" class="textInputSmallRight">
+			<div id="lastname_error"></div>
+		</div>
+		<div id="address_div">
+				<label>Address</label></br>
+				<input type="address" name="address" class="textInput">
+				<div id="address_error"></div>
+			</div>
+			<div id="Country_div">
+					<label>Country</label></br>
+					<input list="country" name="country" class="textInputSmallLeft">
+					<datalist id="country">
+							<option value="Russia">
+							<option value="USA">
+							<option value="Australia">
+							<option value="China">
+							<option value="India">
+						</datalist>
+			<div id="Post_code_div">
+					<label class="labelRight">Post Code</label></br>
+					<input type="postcode" name="postcode" class="textInputSmallRight">
+					<div id="postcode_error"></div>
+				</div>
+   	<div>
+   	<input type="submit" name="register" value="Register" class="btn">
+	   </div>
+
+   </form>
+  </div>
+</body>
+</html>
+<script type="text/javascript" src="validation.js"></script>

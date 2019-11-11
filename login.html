@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <head>
+</head>
+<body>
+    	<div class="page"></div>
+	<button class="btnB" onCLick="window.location='homepage.html'">Home</button>
+  <div id="wrapper">
+	  <h1 id="title">Login to your account</h1>
+   <form method="POST" action="index.php" onsubmit="return Validate()" name="vform" >
+	<div id="username_div">
+		 <label>Username</label></br>
+		 <div class="input">
+		 <input type="text" name="username" class="textInput" placeholder="Enter Your Username Here">
+		</div>
+   	  <div id="name_error"></div>
+	   </div>
+   	<div id="password_div">
+   	  <label class="passlabel">Password</label></br>
+   	  <input type="password" name="password" class="textInput">
+	   </div>
+   	<div>
+   	<input type="submit" name="register" value="login" class="btn">
+	   </div>
+   </form>
+  </div>
+</body>
+</html>
+<script type="text/javascript" src="validation.js"></script>
